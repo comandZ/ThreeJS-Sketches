@@ -6,7 +6,7 @@ function App() {
   const w = window.innerWidth;
   const h = window.innerHeight;
   const renderer = new THREE.WebGLRenderer({ antialias: true });
-  +renderer.setSize(w, h);
+  renderer.setSize(w, h);
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
   renderer.outputColorSpace = THREE.SRGBColorSpace;
   document.body.appendChild(renderer.domElement);
